@@ -96,7 +96,7 @@ module.exports = function (app) {
         }
         res.json({ result: 'successfully updated', _id });
       } catch (err) {
-        res.status(500).json({ error: 'could not update', _id });
+        res.json({ error: 'could not update', _id });
       }
     })
     // Delete an issue
